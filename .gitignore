@@ -1,2 +1,5 @@
 #gitignore
 *.json
+.terraform/
+.terraform.lock.hcl
+
