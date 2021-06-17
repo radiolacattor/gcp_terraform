@@ -2,7 +2,7 @@
 app_name        = "rad" #do NOT enter any spaces
 app_environment = "test" # Dev, Test, Prod, etc
 app_domain      = "rad.com"
-app_project     = "terraform-316615"
+app_project     = "radiolacattor"
 
 # GCP Settings
 gcp_region_1  = "europe-west1"
