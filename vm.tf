@@ -9,7 +9,7 @@ resource "random_id" "instance_id" {
 resource "google_compute_instance" "vm_instance_public" {
   count        = var.node_count
   name         = "${var.app_name}-${var.app_environment}-vm-${count.index}"
-  machine_type = "e2-micro"
+  machine_type = "e2-small"
   zone         = var.gcp_zone_1
   hostname     = "${var.app_name}-vm-${random_id.instance_id.hex}.${var.app_domain}"
   tags         = ["ssh","http","https"]
